@@ -95,7 +95,7 @@ Learn more about API integration in Next.js.
 
 ## Author
 
-- Website - [Add your name here](https://prince-adimado.hashnode.dev)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/primado)
-- Twitter - [@yourusername](https://www.twitter.com/_primado)
+- Website - [Prince Adimado's Blog](https://prince-adimado.hashnode.dev)
+- Frontend Mentor - [@primado](https://www.frontendmentor.io/profile/primado)
+- Twitter - [@_primado_](https://www.twitter.com/_primado)
 
