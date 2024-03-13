@@ -31,61 +31,66 @@ export default function AdviceCard() {
     return (
 
         <>
-            <div className=" bg-dark-grayish-blue w-[20rem] h-[12rem] p-5 flex flex-col gap-2 justify-center items-center rounded-md shadow-lg">
-                <div className="text-neon-green text-center text-sm">
-                    <span className="uppercase ">advice #{data?.slip.id}</span>
-                </div>
-                <div className="text-light-cyan text-center">
-                    {isLoading || !data ? (
-                        <>
-                            <Oval 
-                                visible={true}
-                                height="30"
-                                width="30"
-                                color="hsl(150, 100%, 66%)"
-                                ariaLabel="oval-loading"
-                                wrapperStyle={{}}
-                                wrapperClass=""
-                            />
-                        </>
-                    ): (
-                        <>
-                         &quot;
-                            {data.slip.advice}
-                         &quot;
-                        </>
-                    )}
-
-                   
-                </div>
-                <div className="">
-                    <Image 
-                        src={hori}
-                        alt="Horitanl line"
-                        className=""
-                    />
-
-                </div>
-                <div className="relative flex justify-center">
-                    <div className="absolute top-3">
-                        <button 
-                            type="submit" 
-                            className=""
-                            onClick={handleClick}
-                        >
-                            <div className="bg-neon-green rounded-full w-10 h-10 relative">
-                           
-                                <Image 
-                                    alt="dice icon"
-                                    src={dice}
-                                    className="absolute w-4 right-3 top-3"
-                                />
-                            
-                            </div>
-                        </button>
+            {/* <div className="flex flex-col"> */}
+                <div className=" bg-dark-grayish-blue w-[20rem] p-5 flex flex-col justify-center items-center rounded-md shadow-lg">
+                    <div className="text-neon-green text-center text-sm mb-2">
+                        <span className="uppercase ">advice #{data?.slip.id}</span>
                     </div>
+                    <div className="text-light-cyan text-center py-[2rem] overflow-auto">
+                        {isLoading || !data ? (
+                            <>
+                                <Oval 
+                                    visible={true}
+                                    height="30"
+                                    width="30"
+                                    color="hsl(150, 100%, 66%)"
+                                    ariaLabel="oval-loading"
+                                    wrapperStyle={{}}
+                                    wrapperClass=""
+                                />
+                            </>
+                        ): (
+                            <>
+                             &quot;
+                                {data.slip.advice}
+                             &quot;
+                            </>
+                        )}
+
+                        
+                    </div>
+                    <div className="my-3">
+                        <Image 
+                            src={hori}
+                            alt="Horitanl line"
+                            className=""
+                        />
+
+                    </div>
+
+                    <div className="relative flex justify-center mt-2">
+                        <div className="absolute top-8.3  ">
+                            <button 
+                                type="submit" 
+                                className=""
+                                onClick={handleClick}
+                            >
+                                <div className="bg-neon-green rounded-full w-10 h-10 relative">
+
+                                    <Image 
+                                        alt="dice icon"
+                                        src={dice}
+                                        className="absolute w-4 right-3 top-3"
+                                    />
+
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                        
                 </div>
-            </div>
+                
+            {/* </div> */}
         </>
 
     )
