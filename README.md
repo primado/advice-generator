@@ -53,8 +53,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/primado/advice-generator)
-- Live Site URL: [Add live site URL here](https://myadvice-generator.vercel.app/)
+- Solution URL: [GitHub Link](https://github.com/primado/advice-generator)
+- Live Site URL: [Go to Live Site](https://myadvice-generator.vercel.app/)
 
 ## My process
 
